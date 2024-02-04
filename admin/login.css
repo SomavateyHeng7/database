@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Set your desired background color */
+    color: #343a40; /* Set your desired text color */
+  }
+  
+  /* Page Wrapper */
+  .page-wrapper {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Styles */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Set your desired primary color */
+    color: #fff;
+  }
+  
+  /* Other Styles */
+  .logo-img {
+    text-decoration: none;
+  }
+  
+  .text-primary {
+    color: #007bff; /* Set your desired primary color */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

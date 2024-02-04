@@ -1,0 +1,135 @@
+body,h1,h2,p,ul,ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a fallback font in case Comfortaa isn't available */
+  transition: background-color 0.5s, color 0.5s; /* Add transition for a smoother effect */
+}
+
+/* Global styles */
+.gradient-background {
+  background: #7A92A9;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #4a4f56; /* Slightly lighter than #343a40 */
+  color: #2d2d2d; /* Slightly darker than #333 */
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1, h2, p, li {
+  color: #2d2d2d; 
+}
+
+.topnav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topnav1 a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #555;
+}
+/* .topnav1 button {
+  background-color: #0000FF;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+} */
+
+.dark-mode .gradient-background {
+  background-color: #4a4f56; 
+}
+
+/* Intro section */
+#intro {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Why Choose section */
+#why-choose {
+  padding: 40px;
+}
+
+#why-choose h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#why-choose ul {
+  list-style-type: none;
+}
+
+#why-choose li {
+  margin-bottom: 10px;
+}
+
+/* How to Help section */
+#how-to-help {
+  padding: 40px;
+}
+
+#how-to-help h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#how-to-help ol {
+  list-style-type: decimal;
+}
+
+#how-to-help li {
+  margin-bottom: 10px;
+}
+
+/* Join Us section */
+#join-us {
+  text-align: center;
+  padding: 40px;
+}
+
+#join-us h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #7A92A9; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .topnav1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
