@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-column {
+    width: 180px; /* Set the width of the action column */
+  }
+  
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+h1 {
+    margin: 0;
+}
+  
+section {
+    margin-bottom: 40px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+  
+th {
+    background-color: #f9f9f9;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+.approve-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.disapprove-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.approve-btn:hover {
+    background-color: #0056b3;
+}
+
+.disapprove-btn:hover {
+    background-color: #990000; 
+}
+  
