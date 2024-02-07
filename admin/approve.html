@@ -3,40 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Request Approval - Donation Website</title>
-<link rel="stylesheet" href="request.css">
+<title>Approve Donation Project</title>
+<link rel="stylesheet" href="approve.css">
 </head>
 <body>
 <header>
-  <h1>Request Approval</h1>
+  <h1>Approve Donation Project</h1>
 </header>
 
 <div class="container">
-  <section id="request-details">
-    <h2>Request Details:</h2>
-    <p><strong>Project Name:</strong> Lorem Ipsum Project</p>
-    <p><strong>Requested By:</strong> John Doe</p>
-    <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla elit at justo malesuada, nec finibus arcu condimentum.</p>
-  </section>
-
-  <section id="approval-form">
-    <h2>Approve or Disapprove:</h2>
-    <form action="#" method="post">
-      <div>
-        <input type="radio" id="approve" name="approval" value="approve">
-        <label for="approve">Approve</label>
-      </div>
-      <div>
-        <input type="radio" id="disapprove" name="approval" value="disapprove">
-        <label for="disapprove">Disapprove</label>
-      </div>
-      <div>
-        <label for="reason">Reason (if disapproved):</label>
-        <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+  <form id="approve-form">
+    <label for="message">Message for Approval:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <button type="submit">Approve</button>
+  </form>
 </div>
+
+<script src="scripts.js"></script>
 </body>
 </html>

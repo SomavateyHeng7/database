@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disapprove Donation Project</title>
+<link rel="stylesheet" href="disapprove.css">
+</head>
+<body>
+<header>
+  <h1>Disapprove Donation Project</h1>
+</header>
+
+<div class="container">
+  <form id="disapprove-form">
+    <label for="reason">Reason for Disapproval:</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const disapproveForm = document.getElementById('disapprove-form');
+      
+        disapproveForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+      
+          // Get the reason for disapproval
+          const reason = document.getElementById('reason').value;
+      
+          // Perform further actions (e.g., sending data to server, displaying message)
+          console.log('Reason for disapproval:', reason);
+      
+          // Clear the form
+          disapproveForm.reset();
+        });
+      });
+      
+</script>
+</body>
+</html>
