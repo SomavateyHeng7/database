@@ -15,7 +15,7 @@
 </header>
 <!-- Back button -->
 <div class="container">
-  <a href="index.html" class="back-btn">Back to Dashboard</a>
+  <a href="dashboard.html" class="back-btn">Back to Dashboard</a>
 </div>
 <div class="container">
   <section id="project-list">
@@ -38,7 +38,7 @@
           <td>jehrgbs</td>
           <td>
             <button class="approve-btn">Approve</button>
-            <button class="disapprove-btn">Disapprove</button>
+            <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
           </td>
         </tr>
         <!-- More project rows here -->
@@ -47,6 +47,17 @@
   </section>
 </div>
 
-<script src="scripts.js"></script>
+<script>
+  // Get all approve buttons
+  const approveButtons = document.querySelectorAll('.approve-btn');
+
+  // Add event listener to each approve button
+  approveButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Display a message indicating that the project has been approved
+      alert('Project has been approved!');
+    });
+  });
+</script>
 </body>
 </html>
