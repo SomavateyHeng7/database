@@ -1,79 +1,114 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, img {
+body {
     margin: 0;
     padding: 0;
   }
   
-  /* Global Styles */
   body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f8f9fa; /* Set your desired background color */
-    color: #343a40; /* Set your desired text color */
+    font-family: 'Arial', sans-serif; /* Use a fallback font in case Comfortaa isn't available */
+    transition: background-color 0.5s, color 0.5s; /* Add transition for a smoother effect */
   }
   
-  /* Page Wrapper */
-  .page-wrapper {
-    max-width: 400px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Global styles */
+  body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
   }
   
-  /* Card Styles */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Header styles */
+  .gradient-background {
+      background: #7A92A9;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+  }
+    
+  header {
+      margin-bottom: 20px;
   }
   
-  .card-body {
-    padding: 20px;
+  h1, h2, p, li {
+      color: #2d2d2d; 
+  }
+    
+  .topnav1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+    
+  .topnav1 a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+  }
+  a {
+      text-decoration: none;
+      color: #333;
   }
   
-  /* Form Styles */
-  .form-label {
-    font-weight: bold;
+  a:hover {
+      color: #555;
   }
   
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
+  /* Login form styles */
+  .login-form {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Button Styles */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .login-form h2 {
+      text-align: center;
+      color: #333;
   }
   
-  .btn-primary {
-    background-color: #007bff; /* Set your desired primary color */
-    color: #fff;
+  .login-form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #555;
   }
   
-  /* Other Styles */
-  .logo-img {
-    text-decoration: none;
+  .login-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
   }
   
-  .text-primary {
-    color: #007bff; /* Set your desired primary color */
+  .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0000FF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
   }
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .col-md-8 {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
+  /* Footer styles */
+  #contact {
+      color: #fff;
+      padding: 10px 0;
   }
+  
+  footer {
+      background-color: #7A92A9; 
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      height: 18rem;
+  }
+  .nav a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
   

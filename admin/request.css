@@ -14,9 +14,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.action-column {
-    width: 180px; /* Set the width of the action column */
-  }
+.action-column button {
+    display: inline-block;
+}
   
 header {
     text-align: center;
