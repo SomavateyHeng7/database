@@ -24,7 +24,6 @@
             <script src="./scripts/login.js"></script>
         </form>
     </div>
-
   <script>
     // login.js
 
@@ -32,13 +31,12 @@ function Login() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    // Assuming you have a function to send login credentials to the server
-    // and handle the response
+    // Placeholder for sending login request to the server
     sendLoginRequest(email, password)
         .then(function(response) {
             if (response.success) {
                 // If login is successful, redirect to the dashboard page
-                window.location.href = "/admin/dashboard"; // Modify the URL to match your dashboard route
+                window.location.href = "dashboard.html"; 
             } else {
                 // If login fails, display an error message
                 document.getElementById("wrong-info").style.display = "block";
@@ -47,6 +45,20 @@ function Login() {
         .catch(function(error) {
             console.error('Error:', error);
         });
+}
+
+// Placeholder for sending login request to the server
+function sendLoginRequest(email, password) {
+    // Simulate sending login request and getting a response
+    return new Promise(function(resolve, reject) {
+        // Simulate a successful login response
+        if (email === "admin@gmail.com" && password === "password") {
+            resolve({ success: true });
+        } else {
+            // Simulate a failed login response
+            resolve({ success: false });
+        }
+    });
 }
 
   </script>
