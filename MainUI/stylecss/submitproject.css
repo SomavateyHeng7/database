@@ -65,6 +65,13 @@ a:hover {
     background-color: #4a4f56; 
 }
 
+#currency {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Add some padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px; /* Add some margin to separate it from other elements */
+}
+
 /* Form styles */
 .submissionForm {
     max-width: 600px;
