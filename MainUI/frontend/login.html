@@ -48,7 +48,6 @@
         </form>
     </div>
 <!-- Footer section -->
-
 <section id="contact" class="gradient-background">
     <div class="container ">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6 py-5 mt-5">
@@ -104,5 +103,55 @@
       </footer>
     </div>
   </section>
+  <script>
+    // Check if the account exists (for demonstration, assume a boolean variable)
+    function Login() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Placeholder for sending login request to the server
+      sendLoginRequest(email, password)
+          .then(function(response) {
+              if (response.success) {
+                  // If login is successful, redirect to the dashboard page
+                  window.location.href = "aboutus.html"; 
+              } else {
+                  // If login fails, display an error message
+                  document.getElementById("wrong-info").style.display = "block";
+              }
+          })
+          .catch(function(error) {
+              console.error('Error:', error);
+          });
+      }
+
+  // Placeholder for sending login request to the server
+    function sendLoginRequest(email, password) {
+      // Simulate sending login request and getting a response
+      return new Promise(function(resolve, reject) {
+          // Simulate a successful login response
+          if (email === "user@gmail.com" && password === "password") {
+              resolve({ success: true });
+          } else {
+              // Simulate a failed login response
+              resolve({ success: false });
+          }
+      });
+    }
+
+    // Get a reference to the login button
+    const loginButton = document.getElementById('loginButton');
+
+    // Add an event listener to the login button
+    loginButton.addEventListener('click', function() {
+      if (accountExists) {
+        // Redirect to the home page
+        window.location.href = 'aboutus.html'; 
+      } else {
+        // Redirect to the registration page
+        window.location.href = 'registration.html'; 
+      }
+    });
+  </script>
 </body>
 </html>
