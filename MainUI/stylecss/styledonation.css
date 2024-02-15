@@ -9,7 +9,7 @@ body {
     transition: background-color 0.5s, color 0.5s; /* Add transition for a smoother effect */
 }
   
-  /* Global styles */
+/* Global styles */
 .gradient-background {
     background: #7A92A9;
     color: #fff;
@@ -22,9 +22,9 @@ body {
     color: #2d2d2d; /* Slightly darker than #333 */
 }
   
-  header {
+header {
     margin-bottom: 20px;
-  }
+}
   
   h1, h2, p, li {
     color: #2d2d2d; 
@@ -101,17 +101,19 @@ input, select {
     cursor: pointer;
 }
 
-/* Footer styles */
-#contact {
-    color: #fff;
-    padding: 30px 0;
+.goback-button {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
-footer {
-    text-align: center;
+.goback-button:hover {
+    background-color: #0056b3;
 }
 
-.nav a {
-    color: #fff;
-    text-decoration: none;
-}
+
