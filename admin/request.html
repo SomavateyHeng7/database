@@ -24,12 +24,8 @@
 
 </head>
 <body id="page-top">
-
     <!-- Page Wrapper -->
-    <body id="page-top">
-
-        <!-- Page Wrapper -->
-        <div id="wrapper">
+    <div id="wrapper">
     
             <!-- Sidebar -->
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -201,7 +197,7 @@
                                           <td>jehrgbs</td>
                                           <td>
                                             <button class="approve-btn">Approve</button>
-                                            <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                            <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                           </td>
                                         </tr>
                                         <tr>
@@ -211,7 +207,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -221,7 +217,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -231,7 +227,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>    
                                         </tr>
                                         <tr>
@@ -241,7 +237,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>                                                                                      
                                         </tr>
                                         <tr>
@@ -251,7 +247,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>                                            
                                         </tr>
                                         <tr>
@@ -261,7 +257,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>                                        
                                         </tr>
                                         <tr>
@@ -271,7 +267,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>    
                                         </tr>
                                         <tr>
@@ -281,7 +277,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>  
                                         </tr>
                                         <tr>
@@ -291,7 +287,7 @@
                                             <td>jehrgbs</td>
                                             <td>
                                               <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
+                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Reject</button>
                                             </td>  
                                         </tr>
                                     </tbody>
@@ -299,7 +295,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
 
@@ -365,18 +360,29 @@
     <script src="js/demo/datatables-demo.js"></script>
 
     <script>
-        // Get all approve buttons
-        const approveButtons = document.querySelectorAll('.approve-btn');
-      
-        // Add event listener to each approve button
-        approveButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            // Display a message indicating that the project has been approved
-            alert('Project has been approved!');
-          });
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all approve buttons
+            const approveButtons = document.querySelectorAll('.approve-btn');
+    
+            // Add event listener to each approve button
+            approveButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Display a message indicating that the project has been approved
+                    alert('Project has been approved!');
+                });
+            });
+    
+            // Get all disapprove buttons
+            const disapproveButtons = document.querySelectorAll('.disapprove-btn');
+    
+            // Add event listener to each disapprove button
+            disapproveButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Display a message indicating that the project has been rejected
+                    alert('Project has been rejected!');
+                });
+            });
         });
-      </script>
-
+    </script>
 </body>
-
 </html>
