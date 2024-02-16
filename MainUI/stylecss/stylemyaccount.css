@@ -1,27 +1,32 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul {
+/* stylemyaccount.css */
+body {
     margin: 0;
     padding: 0;
 }
-
-/* Global styles */
+  
+body {
+    font-family: 'Arial', sans-serif; /* Use a fallback font in case Comfortaa isn't available */
+    transition: background-color 0.5s, color 0.5s; /* Add transition for a smoother effect */
+}
+  
+  /* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
-
+  
 /* Header styles */
 .gradient-background {
     background: #7A92A9;
     color: #fff;
     text-align: center;
     padding: 20px;
-  }
-  
+}
+
 .dark-mode {
-    background-color: #4a4f56; /* Slightly lighter than #343a40 */
-    color: #2d2d2d; /* Slightly darker than #333 */
+    background-color: #4a4f56; 
+    color: #2d2d2d; 
 }
   
 header {
@@ -47,7 +52,6 @@ h1, h2, p, li {
     display: flex;
     align-items: center;
 }
-
 .dark-mode .gradient-background {
     background-color: #4a4f56; 
 }
@@ -59,64 +63,52 @@ a {
 a:hover {
     color: #555;
 }
-/* Registration Form styles */
-.registration-form {
+
+/* Login form styles */
+.myaccount-form {
     max-width: 400px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} 
 
-.registration-form h2 {
+.myaccount-form h2 {
     text-align: center;
     color: #333;
 }
 
-.registration-form h4 {
-    text-align: center;
-    color: #555;
-}
-
-.registration-form label {
+.myaccount-form label {
     display: block;
     margin: 10px 0 5px;
     color: #555;
 }
 
-.registration-form input {
+.myaccount-form input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
-
-.registration-form button {
+  
+.myaccount-form button {
     width: 100%;
-    padding: 10px;
-    background-color:#0000FF;
-    color: #fff;
+    background-color: #0000FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
-
-.registration-form button:hover {
+  
+.myaccount-form button:hover {
     background-color: #add8ed;
 }
-
-/* Footer styles */
-#contact {
-    color: #fff;
-    padding: 30px 0;
+  
+.dark-mode {
+    background-color: #333;
+    color: white;
 }
-
-footer {
-    text-align: center;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-}
+  

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -23,6 +24,7 @@
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
+
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -125,23 +127,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
                         </li>
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -173,127 +160,98 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Project</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Donor</h1>
                     <p class="mb-4">At our charity, we believe in the power of compassion and generosity to make a meaningful impact in the lives of those in need.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Sample Data</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Sample</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                          <th>Project ID</th>
-                                          <th>Project Name</th>
-                                          <th>Requested By</th>
-                                          <th>Description</th>
-                                          <th class="action-column">Action</th>
+                                            <th>AccountID</th>
+                                            <th>Email</th>
+                                            <th>Name</th>
+                                            <th>Gender</th>
+                                            <th>Phone Number</th>                                            
                                         </tr>
-                                      </thead>
-                                      <tbody>
+                                    </thead>
+                                    <tbody>
                                         <tr>
-                                          <td>1</td>
-                                          <td>Lorem Ipsum Project</td>
-                                          <td>John Doe</td>
-                                          <td>jehrgbs</td>
-                                          <td>
-                                            <button class="approve-btn">Approve</button>
-                                            <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                          </td>
+                                            <td>21</td>
+                                            <td>user@gmail.com</td>
+                                            <td>Edinburgh</td>
+                                            <td>Male</td>
+                                            <td>098652745</td>
+                                            
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>
+                                            <td>22</td>
+                                            <td>use23r@gmail.com</td>
+                                            <td>Edinburgh</td>
+                                            <td>Male</td>
+                                            <td>098652745</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>use2233r@gmail.com</td>
+                                            <td>Charde Marshall</td>
+                                            <td>Male</td>
+                                            <td>098652745</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>34</td>
+                                            <td>use22r@gmail.com</td>
+                                            <td>Charde Marshall</td>
+                                            <td>Male</td>
+                                            <td>098652745</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>35</td>
+                                            <td>us233r@gmail.com</td>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Male</td>
+                                            <td>098652745</td>   
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>    
+                                            <td>us233r@gmail.com</td>
+                                            <td>Gavin Cortez</td>
+                                            <td>Male</td>
+                                            <td>018293464</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>                                                                                      
+                                            <td>doner@gmail.com</td>
+                                            <td>Martena Mccray</td>
+                                            <td>Female</td>
+                                            <td>038353546</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>doner@gmail.com</td>
+                                            <td>Unity Butler</td>
+                                            <td>Male</td>
+                                            <td>$85,675</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>doner@gmail.com</td>
+                                            <td>Howard Hatfield</td>
+                                            <td>Male</td>
+                                            <td>028347453</td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>                                            
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>                                        
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>    
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>  
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Lorem Ipsum Project</td>
-                                            <td>John Doe</td>
-                                            <td>jehrgbs</td>
-                                            <td>
-                                              <button class="approve-btn">Approve</button>
-                                              <button class="disapprove-btn" onclick="window.location.href='disapprove.html'">Disapprove</button>
-                                            </td>  
-                                        </tr>
+                                            <td>doner@gmail.com</td>
+                                            <td>Bruno Nash</td>
+                                            <td>Male</td>
+                                            <td>012847255</td>
+                                        </tr>                                  
                                     </tbody>
                                 </table>
                             </div>
@@ -310,7 +268,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; My Charity 2024</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
@@ -363,19 +321,6 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
-
-    <script>
-        // Get all approve buttons
-        const approveButtons = document.querySelectorAll('.approve-btn');
-      
-        // Add event listener to each approve button
-        approveButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            // Display a message indicating that the project has been approved
-            alert('Project has been approved!');
-          });
-        });
-      </script>
 
 </body>
 

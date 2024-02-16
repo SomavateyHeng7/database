@@ -102,6 +102,9 @@ a:hover {
     cursor: pointer;
 }
 
+.login-form button:hover {
+    background-color: #add8ed;
+}
 /* Footer styles */
 #contact {
     color: #fff;
