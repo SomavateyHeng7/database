@@ -105,6 +105,13 @@ a:hover {
 .registration-form button:hover {
     background-color: #add8ed;
 }
+#gender {
+    width: 100%; /* Adjust the width as needed */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
 
 /* Footer styles */
 #contact {
