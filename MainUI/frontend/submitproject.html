@@ -27,8 +27,7 @@
 <!-- Submission form section -->
 <section>
   <div class = "submissionForm">
-    <h2>Submission</h2>
-    <h4>Submit Your Project Here</h4>
+    <h2>Request Submission</h2>
     <form onsubmit="return false" method="post" enctype="multipart/form-data">
       <label>Information <strong style=" color: red"> *</strong></label>
       <input type="text" id="information" name="information" required>
@@ -43,14 +42,13 @@
       <select id="currency" name="currency" required>
         <option value="baht">BAHT</option>
       </select>
+
+      <form action="/action_page.php">
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+      </form>
   
-      <!-- <label for="currency">Currency:</label>
-      <select id="currency" name="currency" required>
-        <option value="baht">BAHT</option>
-        <option value="usd">USD</option>
-      </select> -->
-  
-      <button class="submitForm-button" onclick="submitForm()">Submit Project</button>
+      <button class="submitForm-button" onclick="submitForm()">Request Project Submission</button>
       <script>
         function submitForm() 
         {

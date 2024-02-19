@@ -111,4 +111,12 @@ a:hover {
     background-color: #333;
     color: white;
 }
-  
+
+.myaccount-form .signup-btn-red-button {
+    background-color: red;
+    color: white; /* This is to ensure the text is visible on the red background */
+}
+
+.myaccount-form .signup-btn-red-button:hover {
+    background-color: #FFCCCB ;
+}
